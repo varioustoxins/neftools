@@ -1,0 +1,15 @@
+# eclipse project file
+.settings/
+.classpath
+.project
+
+#xtext
+src-gen
+xtend-gen
+model/generated
+bin
+
+.antlr-generator-3.2.0-patch.jar
+
+.DS_Store
+
