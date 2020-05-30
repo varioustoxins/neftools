@@ -10,18 +10,19 @@ import org.eclipse.xtext.testing.util.ParseHelper
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.^extension.ExtendWith
-import uk.ac.ccpn.neftools.star.Model
+import uk.ac.ccpn.neftools.star.Star_file
+
 
 @ExtendWith(InjectionExtension)
 @InjectWith(StarInjectorProvider)
 class StarParsingTest {
 	@Inject
-	ParseHelper<Model> parseHelper
+	ParseHelper<Star_file> parseHelper
 	
 	@Test
 	def void loadModel() {
 		val result = parseHelper.parse('''
-			Hello Xtext!
+			data_123
 		''')
 		Assertions.assertNotNull(result)
 		val errors = result.eResource.errors

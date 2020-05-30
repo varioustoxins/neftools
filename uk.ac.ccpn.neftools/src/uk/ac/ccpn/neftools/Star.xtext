@@ -2,8 +2,14 @@ grammar uk.ac.ccpn.neftools.Star with org.eclipse.xtext.common.Terminals
 
 generate star "http://www.ac.uk/ccpn/neftools/Star"
 
-Model:
-	greetings+=Greeting*;
-	
-Greeting:
-	'Hello' name=ID '!';
+Star_file:
+    blocks+=Data_block*;
+
+
+terminal DATA_ID:
+	'data_'('!'..'~')+
+;  
+
+Data_block:
+    name = DATA_ID
+;

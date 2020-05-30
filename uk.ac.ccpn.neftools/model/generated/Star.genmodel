@@ -6,11 +6,11 @@
     copyrightFields="false" runtimeVersion="2.20">
   <genPackages prefix="Star" basePackage="uk.ac.ccpn.neftools" disposableProviderFactory="true"
       fileExtensions="star,nef,nexf" ecorePackage="Star.ecore#/">
-    <genClasses ecoreClass="Star.ecore#//Model">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Star.ecore#//Model/greetings"/>
+    <genClasses ecoreClass="Star.ecore#//Star_file">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Star.ecore#//Star_file/blocks"/>
     </genClasses>
-    <genClasses ecoreClass="Star.ecore#//Greeting">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Star.ecore#//Greeting/name"/>
+    <genClasses ecoreClass="Star.ecore#//Data_block">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Star.ecore#//Data_block/name"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>
